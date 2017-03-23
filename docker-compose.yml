@@ -1,0 +1,26 @@
+version: "2"
+services:
+    api:
+        build:
+            context: ./api
+        volumes:
+            - ./api:/go/src/github.com/wyiemay/convoy-api/api
+        ports:
+            - 8080:8080
+        links:
+            - database
+    database:
+        volumes:
+            - ./database/schema:/mysql/schema:rw
+            - ./database/script:/mysql/script:rw
+            - ./database/volume:/var/lib/mysql:rw
+        image: mysql:5.6.28
+        restart: always
+        ports:
+            - "3889:3306"
+        command: "/mysql/script/permission.sh"
+        environment:
+            - MYSQL_ROOT_PASSWORD=not-a-secret
+            - MYSQL_USER=convoy
+            - MYSQL_PASSWORD=convoy
+            - MYSQL_DATABASE=convoy

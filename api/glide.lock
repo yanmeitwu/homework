@@ -1,0 +1,18 @@
+hash: 45ee000567231eac41b6e1b57b1fc74a99d04ac1220a2a627219ed5f23a13134
+updated: 2017-03-20T16:36:12.482243913-07:00
+imports:
+- name: github.com/albrow/negroni-json-recovery
+  version: 7047e5bd92bc51b9f6bf6c6f5d15818a4637e190
+- name: github.com/codegangsta/negroni
+  version: c0db5feaa33826cd5117930c8f4ee5c0f565eec6
+- name: github.com/go-sql-driver/mysql
+  version: a0583e0143b1624142adab07e0e97fe106d99561
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 392c28fe23e1c45ddba891b0320b3b5df220beea
+- name: github.com/unrolled/render
+  version: 50716a0a853771bb36bfce61a45cdefdb98c2e6e
+- name: github.com/urfave/negroni
+  version: fde5e16d32adc7ad637e9cd9ad21d4ebc6192535
+testImports: []
