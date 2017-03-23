@@ -5,11 +5,11 @@ An simple HTTP/JSON API written in GO.
 
 ## Installation
 Install docker and cocker compose, checkout this repo.
-
+```
 docker-compose build api
 docker-compose up api
 docker-compose up database
-
+```
 
 ## API Documentation 
 ### POST /driver
