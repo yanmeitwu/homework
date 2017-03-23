@@ -24,9 +24,11 @@ View a shipment's offer(s)
 Accept or pass an offer
 
 Test:
+```
 curl -H "Content-Type: application/json" -X POST -d '{"capacity": 100}' http://localhost:8080/driver
 curl -H "Content-Type: application/json" -X POST -d '{"capacity": 50}' http://localhost:8080/driver
 curl -H "Content-Type: application/json" -X POST -d '{"capacity": 50}' http://localhost:8080/shipment
 curl -v http://localhost:8080/driver/1
 curl -v http://localhost:8080/shipment/1
 curl -H "Content-Type: application/json" -X PUT -d '{"status": "ACCEPT"}' http://localhost:8080/offer/1
+```
